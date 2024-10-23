@@ -213,18 +213,16 @@ Now, go to your browser and access your EC2 public IP to check if the app is run
 ```bash
 http://<your-ec2-public-ip>:8000
 ```
-![alt text](<images/without port 8000.png>)
+![pic](img/Screenshot%20(629).png)
 
 4. The webpage will not work, WHY?
 
  we have not added the port 8000 to our security group of our instance so do that and try accessing  the EC2 public IP
 
-![pic](img)
-
-![pic](img)
+![pic](img/Screenshot%20(630).png)
 
 
-![pic](img)
+![pic](img/Screenshot%20(631).png)
 
 You have successfully deployed the Dockerized Flask app on an AWS EC2 instance. This is a common workflow in modern cloud infrastructure where applications are containerized for ease of deployment, scalability, and management.
 
