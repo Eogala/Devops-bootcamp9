@@ -247,7 +247,7 @@ Use the Docker CLI to log in to your Docker Hub account:
 ```bash
 sudo docker login
 ```
-![pic](img)
+![pic](img/Screenshot%20(651).png)
 
 You will be prompted to enter your Docker Hub username and password.
 
