@@ -218,10 +218,12 @@ http://<your-ec2-public-ip>:8000
 
  we have not added the port 8000 to our security group of our instance so do that and try accessing  the EC2 public IP
 
-![alt text](<images/adD port 800 to SG.png>)
+![pic](img)
+
+![pic](img)
 
 
-![alt text](<images/EC2 public IP.png>)
+![pic](img)
 
 You have successfully deployed the Dockerized Flask app on an AWS EC2 instance. This is a common workflow in modern cloud infrastructure where applications are containerized for ease of deployment, scalability, and management.
 
@@ -236,10 +238,10 @@ After successfully building and running your Docker image, you may want to share
 
 1. Go to [Docker Hub](https://hub.docker.com/).
 2. Sign up for a free account if you don’t have one already.
-![alt text](<images/hub docker.png>)
+![pic](img)
 3. create a repo
-![alt text](<images/create a repo.png>)
-![alt text](<images/create a repo2.png>)
+![pic](img)
+![pic](img)
 #### **Step 2: Log In to Docker Hub from Your Terminal**
 
 Use the Docker CLI to log in to your Docker Hub account:
@@ -247,7 +249,7 @@ Use the Docker CLI to log in to your Docker Hub account:
 ```bash
 sudo docker login
 ```
-![alt text](<images/docker login.png>)
+![pic](img)
 
 You will be prompted to enter your Docker Hub username and password.
 
@@ -264,7 +266,7 @@ For example:
 ```bash
 sudo docker tag flask-application:1.0.0 yourusername/flask-application:1.0.0
 ```
-![alt text](<images/docker tag.png>)
+![pic](img)
 
 
 **Why Do We Tag Docker Images?**
@@ -280,13 +282,13 @@ Once your image is tagged, you can push it to Docker Hub using the following com
 ```bash
 docker push yourusername/flask-application:1.0.0
 ```
-![alt text](<images/docker push.png>)
+![pic](img)
 
 #### **Step 5: Verify the Push**
 
 After the push completes, you can verify that your image is on Docker Hub by visiting your Docker Hub profile and checking the repositories.
-![alt text](<images/push sucessful.png>)
-![alt text](<images/push sucessful tag.png>)
+![pic](img)
+![pic](img)
 ---
 
 ### Why Push to Docker Hub?
