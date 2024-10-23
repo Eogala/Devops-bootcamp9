@@ -286,8 +286,8 @@ docker push yourusername/flask-application:1.0.0
 #### **Step 5: Verify the Push**
 
 After the push completes, you can verify that your image is on Docker Hub by visiting your Docker Hub profile and checking the repositories.
-![pic](img)
-![pic](img)
+![pic](img/Screenshot%20(632).png)
+![pic](img/Screenshot%20(638).png)
 ---
 
 ### Why Push to Docker Hub?
