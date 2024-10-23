@@ -167,3 +167,69 @@ Let’s break down the `Dockerfile` step by step:
   - `--bind 0.0.0.0:8000`: Tells Gunicorn to bind the app to all network interfaces on port 8000, making it accessible.
   - `hello:app`: This specifies the Python module (`hello`) and the WSGI application instance (`app`) to run. It assumes your Python application file is named `hello.py` and it contains a variable `app` that represents your Flask application.
   
+### Step 4. **Run the Docker Application**
+
+1. **Build the Docker Image**:
+
+   ```bash
+   docker build -t flask-application:1.0.0 .
+   ```
+![alt text](<images/docker build.png>)
+
+- Check if the image built
+
+```bash
+sudo docker images
+```
+![alt text](<images/docker images.png>)
+
+2.  **Run the Docker Container**:
+   ```bash
+docker run -d -p 8000:8000 flask-application:1.0.0
+   ```
+
+Check if the container is running if it is PROCEED to 3
+
+```bash
+sudo docker ps
+```
+![alt text](<images/docker run and ps.png>) 
+# if the container isn't running check the list of all containers
+
+```bash
+sudo docker ps -a
+```
+
+To troubleshoot or find out why the container "exited" and isn't running you'll check the container logs by running this command 
+
+```bash
+sudo docker logs <container_id_or_name>
+
+```
+
+3.  Test in Browser
+Now, go to your browser and access your EC2 public IP to check if the app is running properly:
+
+```bash
+http://<your-ec2-public-ip>:8000
+```
+![alt text](<images/without port 8000.png>)
+
+4. The webpage will not work, WHY?
+
+ we have not added the port 8000 to our security group of our instance so do that and try accessing  the EC2 public IP
+
+![alt text](<images/adD port 800 to SG.png>)
+
+
+![alt text](<images/EC2 public IP.png>)
+
+You have successfully deployed the Dockerized Flask app on an AWS EC2 instance. This is a common workflow in modern cloud infrastructure where applications are containerized for ease of deployment, scalability, and management.
+
+# Let's push the image to docker hub
+
+---
+
+### Pushing Docker Images to Docker Hub
+
+After successfully building and running your Docker image, you may want to share it with others or deploy it to different environments. Docker Hub is a cloud-based registry service that allows you to store and distribute Docker images.
