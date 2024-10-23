@@ -173,14 +173,15 @@ Let’s break down the `Dockerfile` step by step:
    ```bash
    docker build -t flask-application:1.0.0 .
    ```
-![alt text](<images/docker build.png>)
+![pic](img/Screenshot%20(646).png)
 
+![pic](img/Screenshot%20(647).png)
 - Check if the image built
 
 ```bash
 sudo docker images
 ```
-![alt text](<images/docker images.png>)
+![pic](img/Screenshot%20(648).png)
 
 2.  **Run the Docker Container**:
    ```bash
@@ -192,7 +193,7 @@ Check if the container is running if it is PROCEED to 3
 ```bash
 sudo docker ps
 ```
-![alt text](<images/docker run and ps.png>) 
+![pic](img)
 # if the container isn't running check the list of all containers
 
 ```bash
