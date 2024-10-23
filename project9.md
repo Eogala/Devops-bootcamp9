@@ -39,3 +39,27 @@ Docker is a containerization platform that simplifies how applications are built
 In essence, Docker allows you to package your app and its dependencies into a small, isolated unit known as a **container**.
 
 ---
+### How Docker Works
+
+Docker uses a **client-server** architecture:
+1. **Docker Client:** The CLI tool you use to interact with Docker.
+2. **Docker Daemon:** The background service (or server) that manages images, containers, networks, and volumes.
+3. **Docker Images:** A read-only blueprint for creating containers. Think of an image as the recipe and the container as the dish.
+4. **Docker Containers:** These are the running instances of images. A container is like a lightweight, isolated environment where your app runs.
+
+---
+
+### Docker Images vs Containers
+
+- **Docker Image:** A static file containing the code, dependencies, and runtime for your app. Images are built from Dockerfiles, which we'll explore shortly.
+- **Docker Container:** A container is a live, running instance of an image. You can have multiple containers running from the same image, each operating independently.
+
+### Dockerfile: Building Your First Image
+
+## Step 1 Provision an instance
+
+- Spin up an Ubuntu 24.04 t2.micro this is where we'll be doing the project in
+
+- SSH into the instance 
+
+
