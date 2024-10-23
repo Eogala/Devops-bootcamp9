@@ -265,7 +265,7 @@ For example:
 ```bash
 sudo docker tag flask-application:1.0.0 yourusername/flask-application:1.0.0
 ```
-![pic](img)
+![pic](img/Screenshot%20(633).png)
 
 
 **Why Do We Tag Docker Images?**
@@ -281,7 +281,7 @@ Once your image is tagged, you can push it to Docker Hub using the following com
 ```bash
 docker push yourusername/flask-application:1.0.0
 ```
-![pic](img)
+![pic](img/Screenshot%20(636).png)
 
 #### **Step 5: Verify the Push**
 
