@@ -193,7 +193,7 @@ Check if the container is running if it is PROCEED to 3
 ```bash
 sudo docker ps
 ```
-![pic](img)
+![pic](img/Screenshot%20(650).png)
 # if the container isn't running check the list of all containers
 
 ```bash
