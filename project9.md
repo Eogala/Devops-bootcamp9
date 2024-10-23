@@ -299,3 +299,5 @@ After the push completes, you can verify that your image is on Docker Hub by vis
 
 
 # Terminate your ec2 instance after
+
+# The end
