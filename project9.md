@@ -237,10 +237,9 @@ After successfully building and running your Docker image, you may want to share
 
 1. Go to [Docker Hub](https://hub.docker.com/).
 2. Sign up for a free account if you don’t have one already.
-![pic](img)
 3. create a repo
-![pic](img)
-![pic](img)
+![pic](img/Screenshot%20(632).png)
+
 #### **Step 2: Log In to Docker Hub from Your Terminal**
 
 Use the Docker CLI to log in to your Docker Hub account:
